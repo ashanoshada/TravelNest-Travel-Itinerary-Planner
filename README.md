@@ -63,7 +63,7 @@ A responsive travel booking platform built using HTML, CSS, JavaScript, and PHP.
 
 7. **❗Open the web browser and below address paste the seach bar**
     ```bash
-    http://localhost/TravelNest - Travel Itinerary Planner/home.html
+    http://localhost/TravelNest-Travel-Itinerary-Planner/home.html
 
     http://localhost/TravelNest%20-%20Travel%20Itinerary%20Planner/home.html
 
