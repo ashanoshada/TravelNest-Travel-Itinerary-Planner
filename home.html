@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>TravelNest - Travel Itinerary Planner</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark px-5 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>No. 81, Perademiya, Kandy, Sri Lanka</small>
+                    <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+012 345 6789</small>
+                    <small class="text-light"><i class="fa fa-envelope-open me-2"></i>info@example.com</small>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center text-lg-end">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://x.com/i/flow/login?lang=en"><i class="fab fa-twitter fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.facebook.com/login.php/"><i class="fab fa-facebook-f fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.linkedin.com/login"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.instagram.com/"><i class="fab fa-instagram fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href="https://www.youtube.com/"><i class="fab fa-youtube fw-normal"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+            <a href="" class="navbar-brand p-0">
+                <h1 class="text-primary m-0"><i class="fa fa-map-marker-alt me-3"></i>TravelNest</h1>
+                <!-- <img src="img/logo.png" alt="Logo"> -->
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="home.html" class="nav-item nav-link active">Home</a>
+                    <a href="service.html" class="nav-item nav-link">Services</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="contact.php" class="nav-item nav-link">Contact</a>
+                    <a href="index.php" class="nav-item nav-link">My Account</a>
+                   
+                    <div class="nav-item dropdown">
+                        <a href="foreign_tour.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Foreign Travel</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="foreign_tour.html" class="dropdown-item">Europe</a>
+                            <a href="foreign_tour.html" class="dropdown-item">Asia</a>
+                            <a href="foreign_tour.html" class="dropdown-item">America</a>
+                            <a href="foreign_tour.html" class="dropdown-item">Africa</a>
+                            <a href="foreign_tour.html" class="dropdown-item">Australia</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <a href="index.php" class="btn btn-primary rounded-pill py-2 px-4">Register</a>
+            </div>
+        </nav>
+
+        <div class="container-fluid bg-primary py-5 mb-5 hero-header">
+            <div class="container py-5">
+                <div class="row justify-content-center py-5">
+                    <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
+                        <h1 class="display-3 text-white mb-3 animated slideInDown">Enjoy Your Vacation With Us</h1>
+                        <p class="fs-4 text-white mb-4 animated slideInDown">Welcome to Travelnest, your ultimate companion for seamless travel planning.</p>
+                        <div class="position-relative w-75 mx-auto animated slideInDown">
+                            <input class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Eg: Thailand">
+                            <button type="button" class="btn btn-primary rounded-pill py-2 px-4 position-absolute top-0 end-0 me-2" style="margin-top: 7px;">Search</button><br>
+                            <a href="booking.html" class="btn btn-primary py-3 px-2 w-25">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar & Hero End -->
+
+
+
+    <!-- About Start 01-->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="img-fluid position-absolute w-100 h-100" src="img/abount_my.jpg" alt="" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <h6 class="section-title bg-white text-start text-primary pe-3">About Us</h6>
+                    <h1 class="mb-4">Welcome to <span class="text-primary">TravelNest</span></h1>
+                    <p class="mb-4">Welcome to Travelnest, your ultimate companion for seamless travel planning.</p>
+                    <p class="mb-4">Whether you're dreaming of a tranquil getaway, a bustling city adventure, or a bespoke journey tailored to your style, Travelnest simplifies every step.</p>
+                    <p class="mb-4">From finding the perfect destination to crafting an itinerary that matches your pace, we've got you covered.</p>
+                    <div class="row gy-2 gx-4 mb-4">
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>First Class Flights</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Your All-in-One Travel Companion</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Personalized Experiences</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Latest Model Vehicles</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Traveler-Centric Design</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>24/7 Service</p>
+                        </div>
+                    </div>
+                    <a class="btn btn-primary py-3 px-5 mt-2" href="about.html">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- About End 01-->
+
+
+    <!-- Support Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Services</h6>
+                <h1 class="mb-5">Our Support</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-globe text-primary mb-4"></i>
+                            <h5>Custom Itinerary Planning</h5>
+                            <p>TravelNest enables users to design personalized travel itineraries based on their preferences, budget, and travel dates.</p>
+                            <p>Users can input their desired activities, travel style (luxury, budget, adventure, etc.), and specific interests (nature, culture, nightlife).</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-hotel text-primary mb-4"></i>
+                            <h5>Destination Guides</h5>
+                            <p>TravelNest offers in-depth guides for both popular and hidden destinations. Each guide includes:</p>
+                            <p>----- Key attractions and must-visit landmarks.</p>
+                            <p>----- Recommendations for local cuisine and dining spots.</p>
+                            <p>----- Cultural tips and etiquette for interacting with locals.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-user text-primary mb-4"></i>
+                            <h5>Travel Guides - Language and Culture Tips</h5>
+                            <p>Basic phrases in the local language, covering greetings, directions, and common questions.</p>
+                            <p>Etiquette tips to avoid cultural faux pas.</p>
+                            <p> Insights into local customs and traditions.This feature enhances travelers' experiences by promoting respectful and meaningful interactions with locals</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Local Experiences</h5>
+                            <p>Guided tours of historical landmarks and natural wonders.</p>
+                            <p>Adventure activities such as hiking, snorkeling, or zip-lining.</p>
+                            <p>Cultural workshops like cooking classes or traditional crafts.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Support End -->
+
+
+    <!-- Image Store Start -->
+    <div class="container-xxl py-5 destination">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Memories</h6>
+                <h1 class="mb-5">Image Gallery</h1>
+            </div>
+            <div class="row g-3">
+                <div class="col-lg-7 col-md-6">
+                    <div class="row g-3">
+                        <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
+                            <a class="position-relative d-block overflow-hidden" href="">
+                                <img class="img-fluid" src="img/1.jpg" alt="">
+                                
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
+                            <a class="position-relative d-block overflow-hidden" href="">
+                                <img class="img-fluid" src="img/2.jpg" alt="">
+                                
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
+                            <a class="position-relative d-block overflow-hidden" href="">
+                                <img class="img-fluid" src="img/3.jpg" alt="">
+                                
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px;">
+                    <a class="position-relative d-block h-100 overflow-hidden" href="">
+                        <img class="img-fluid position-absolute w-100 h-100" src="img/5.jpg" alt="" style="object-fit: cover;">
+                        
+                    </a>
+                </div>
+                
+                <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px;">
+                    <a class="position-relative d-block h-100 overflow-hidden" href="">
+                        <img class="img-fluid position-absolute w-100 h-100" src="img/8.jpg" alt="" style="object-fit: cover;">
+                        
+                    </a>
+                </div>
+
+                <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
+                    <a class="position-relative d-block overflow-hidden" href="">
+                        <img class="img-fluid" src="img/9.jpg" alt="">
+                        
+                    </a>
+                </div>
+                <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
+                    <a class="position-relative d-block overflow-hidden" href="">
+                        <img class="img-fluid" src="img/10.jpg" alt="">
+                        
+                    </a>
+                </div>
+                <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
+                    <a class="position-relative d-block overflow-hidden" href="">
+                        <img class="img-fluid" src="img/11.jpg" alt="">
+                        
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- image Store End -->
+
+    <!-- happy custmer Start -->
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="booking p-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-md-6 text-white">
+                        <h6 class="text-white text-uppercase">Reviews</h6>
+                        <h1 class="text-white mb-4">Successful Trips and Happy Custmers</h1>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>"The Perfect Travel Companion!"</p>
+                            
+                        </div>
+                        <p>TravelNest made planning my trip effortless! The custom itinerary tool saved me hours, and I discovered amazing hidden gems thanks to their destination guides. I can’t imagine traveling without it!</p>
+                            <p>-Mr Hemal Perera (Populor Actor)</p>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>"Budget-Friendly and Easy to Use"</p>
+                        </div>
+                        <p>TravelNest made planning my trip effortless! The custom itinerary tool saved me hours, and I discovered amazing hidden gems thanks to their destination guides. I can’t imagine traveling without it!</p>
+                            <p>-Mrs Sanduni Fernando (Populor Actoress)</p>
+                        
+                        
+                    </div>
+                    <div class="col-md-6">
+                        <h1 class="text-white mb-4">Our Best Review</h1>
+                        <div class="testimonial-item bg-white text-center border p-4">
+                            <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="img/sharuk.jpeg" style="width: 80px; height: 80px;">
+                            <h5 class="mb-0">Shah Rukh Khan</h5>
+                            <p>Indian Actor</p>
+                            <p class="mb-0">"I joined the forums to ask about offbeat destinations, and the community was so welcoming and helpful. I got fantastic advice and even made a new friend who joined me on my trip!"</p>
+                        </div><br>
+                        <form>
+                            <div class="row g-3">
+                                
+                                
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- happy custmer Start -->
+
+    <!-- Process Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center pb-4 wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Process</h6>
+                <h1 class="mb-5">3 Easy Steps</h1>
+            </div>
+            <div class="row gy-5 gx-4 justify-content-center">
+                <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="position-relative border border-primary pt-5 pb-4 px-4">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                            <i class="fa fa-globe fa-3x text-white"></i>
+                        </div>
+                        <h5 class="mt-4">Choose A Destination</h5>
+                        <hr class="w-25 mx-auto bg-primary mb-1">
+                        <hr class="w-50 mx-auto bg-primary mt-0">
+                        <p class="mb-0">The Choose A Destination feature on TravelNest is designed to help users select the perfect location for their next adventure, whether they have a specific idea in mind or are completely undecided.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="position-relative border border-primary pt-5 pb-4 px-4">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                            <i class="fa fa-dollar-sign fa-3x text-white"></i>
+                        </div>
+                        <h5 class="mt-4">Pay Online</h5>
+                        <hr class="w-25 mx-auto bg-primary mb-1">
+                        <hr class="w-50 mx-auto bg-primary mt-0">
+                        <p class="mb-0">The Pay Online feature ensures a seamless, secure, and convenient payment process for users booking accommodations, flights, and experiences through TravelNest.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="position-relative border border-primary pt-5 pb-4 px-4">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                            <i class="fa fa-plane fa-3x text-white"></i>
+                        </div>
+                        <h5 class="mt-4">Travel Today</h5>
+                        <hr class="w-25 mx-auto bg-primary mb-1">
+                        <hr class="w-50 mx-auto bg-primary mt-0">
+                        <p class="mb-0">The Travel Today feature is designed for spontaneous travelers who want to embark on an immediate adventure. This dynamic tool focuses on same-day or next-day travel options, offering convenience and flexibility.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Process Start -->
+
+
+    <!--Custmer Order's Table-->
+    <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+        <h6 class="section-title bg-white text-center text-primary px-3">Custmer's Confidence</h6>
+        
+    </div>
+    <div class="table_body">
+        
+    <main class="table" id="customers_table">
+        <section class="table__header">
+            <h1>Customer's Orders</h1>
+            
+            
+        </section>
+        <section class="table__body">
+            <table>
+                <thead>
+                    <tr>
+                        <th> Id </th>
+                        <th> Customer</th>
+                        <th> Location</th>
+                        <th> Booking Date</th>
+                        <th> Status</th>
+                        <th> Amount </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> 1 </td>
+                        <td> <img src="images/Zinzu Chan Lee.jpg" alt="">Zinzu Chan Lee</td>
+                        <td> Kandy </td>
+                        <td> 20 Dec, 2024 </td>
+                        <td>
+                            <p class="status delivered">Complete</p>
+                        </td>
+                        <td> <strong> $12.90 </strong></td>
+                    </tr>
+                    <tr>
+                        <td> 2 </td>
+                        <td><img src="images/miss.jpeg" alt=""> Jeet Saru </td>
+                        <td> India </td>
+                        <td> 27 Aug, 2024 </td>
+                        <td>
+                            <p class="status cancelled">Cancelled</p>
+                        </td>
+                        <td> <strong>$50.50</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> 3</td>
+                        <td><img src="images/Sonal Gharti.jpg" alt=""> Sonal Gharti </td>
+                        <td> Tokyo </td>
+                        <td> 14 Mar, 2025 </td>
+                        <td>
+                            <p class="status delivered">Complete</p>
+                        </td>
+                        <td> <strong>$210.40</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> 4</td>
+                        <td><img src="images/Alson GC.jpg" alt=""> Alson GC </td>
+                        <td> Colombo </td>
+                        <td> 25 May, 2024 </td>
+                        <td>
+                            <p class="status delivered">Complete</p>
+                        </td>
+                        <td> <strong>$14.70</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> 5</td>
+                        <td><img src="images/Sarita Limbu.jpg" alt=""> Sarita Limbu </td>
+                        <td> London </td>
+                        <td> 23 Apr, 2025 </td>
+                        <td>
+                            <p class="status pending">Pending</p>
+                        </td>
+                        <td> <strong>$37.99</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> 6</td>
+                        <td><img src="images/Alex Gonley.jpg" alt=""> Alex Gonley </td>
+                        <td> London </td>
+                        <td> 23 Apr, 2023 </td>
+                        <td>
+                            <p class="status cancelled">Cancelled</p>
+                        </td>
+                        <td> <strong>$39.99</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> 7</td>
+                        <td><img src="images/Alson GC.jpg" alt=""> Jeet Saru </td>
+                        <td> New York </td>
+                        <td> 20 May, 2024 </td>
+                        <td>
+                            <p class="status delivered">Complete</p>
+                        </td>
+                        <td> <strong>$39.99</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> 8</td>
+                        <td><img src="images/Sarita Limbu.jpg" alt=""> Aayat Ali Khan </td>
+                        <td> Galle </td>
+                        <td> 30 Feb, 2025 </td>
+                        <td>
+                            <p class="status pending">Pending</p>
+                        </td>
+                        <td> <strong>$14.70</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> 9</td>
+                        <td><img src="images/Alex Gonley.jpg" alt=""> Alson GC </td>
+                        <td> Dhaka </td>
+                        <td> 22 Dec, 2023 </td>
+                        <td>
+                            <p class="status cancelled">Cancelled</p>
+                        </td>
+                        <td> <strong>$249.99</strong> </td>
+                    </tr>
+
+                    <tr>
+                        <td> 10</td>
+                        <td><img src="images/Sonal Gharti.jpg" alt=""> Sonal Gharti </td>
+                        <td> Tokyo </td>
+                        <td> 14 Mar, 2025 </td>
+                        <td>
+                            <p class="status delivered">Complete</p>
+                        </td>
+                        <td> <strong>$210.40</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> 11</td>
+                        <td><img src="images/Alson GC.jpg" alt=""> Alson GC </td>
+                        <td> Colombo </td>
+                        <td> 25 May, 2024 </td>
+                        <td>
+                            <p class="status delivered">Complete</p>
+                        </td>
+                        <td> <strong>$14.70</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> 12</td>
+                        <td><img src="images/Sarita Limbu.jpg" alt=""> Sarita Limbu </td>
+                        <td> London </td>
+                        <td> 23 Apr, 2025 </td>
+                        <td>
+                            <p class="status pending">Pending</p>
+                        </td>
+                        <td> <strong>$37.99</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> 13</td>
+                        <td><img src="images/Alex Gonley.jpg" alt=""> Alex Gonley </td>
+                        <td> London </td>
+                        <td> 23 Apr, 2023 </td>
+                        <td>
+                            <p class="status cancelled">Cancelled</p>
+                        </td>
+                        <td> <strong>$39.99</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> 14</td>
+                        <td><img src="images/Alson GC.jpg" alt=""> Jeet Saru </td>
+                        <td> New York </td>
+                        <td> 20 May, 2024 </td>
+                        <td>
+                            <p class="status delivered">Complete</p>
+                        </td>
+                        <td> <strong>$39.99</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> 15</td>
+                        <td><img src="images/Sarita Limbu.jpg" alt=""> Aayat Ali Khan </td>
+                        <td> Galle </td>
+                        <td> 30 Feb, 2025 </td>
+                        <td>
+                            <p class="status pending">Pending</p>
+                        </td>
+                        <td> <strong>$14.70</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> 16</td>
+                        <td><img src="images/Alex Gonley.jpg" alt=""> Alson GC </td>
+                        <td> Dhaka </td>
+                        <td> 22 Dec, 2023 </td>
+                        <td>
+                            <p class="status cancelled">Cancelled</p>
+                        </td>
+                        <td> <strong>$249.99</strong> </td>
+                    </tr>
+                    
+                    
+                    
+                    
+                </tbody>
+            </table>
+        </section>
+    </main>
+</div>
+    <!--Custmer Order's Table end-->
+
+    <!-- Package Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Packages</h6>
+                <h1 class="mb-5">Awesome Packages</h1>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="package-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/temple.jpg" alt="">
+                        </div>
+                        <div class="d-flex border-bottom">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Kandy</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>2 days</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>3 Person</small>
+                        </div>
+                        <div class="text-center p-4">
+                            <h3 class="mb-0">Kandy - A Jewel in the Hill Country</h3>
+                            <p>$149.00</p>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>
+                            <p>Nestled amidst the lush greenery of Sri Lanka's central highlands, Kandy is a city rich in history, culture, and natural beauty. Known as the last capital of the ancient kings of Sri Lanka, Kandy is a UNESCO World Heritage Site and a must-visit destination for travelers seeking a blend of tradition and tranquility.</p>
+                            <div class="d-flex justify-content-center mb-2">
+                                <a href="booking_kandy.html" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
+                                <a href="booking.html" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="package-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/galle.jpg" alt="">
+                        </div>
+                        <div class="d-flex border-bottom">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Galle</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>3 days</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>3 Person</small>
+                        </div>
+                        <div class="text-center p-4">
+                            <h3 class="mb-0">Galle - A Coastal Gem</h3>
+                            <p>$139.00</p>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                
+                            </div>
+                            <p>Located on Sri Lanka's southern coast, Galle is a historic and picturesque city known for its colonial charm, stunning beaches, and vibrant culture. A blend of old-world charm and modern vibrancy, Galle is a destination that appeals to history enthusiasts, beach lovers, and adventure seekers alike.</p>
+                            <div class="d-flex justify-content-center mb-2">
+                                <a href="booking_galle.html" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
+                                <a href="booking.html" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="package-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/mal.jpg" alt="">
+                        </div>
+                        <div class="d-flex border-bottom">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Malaysia</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>3 days</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>2 Person</small>
+                        </div>
+                        <div class="text-center p-4">
+                            <h3 class="mb-0">Malaysia - A Land of Diversity and Wonders</h3>
+                            <p>$189.00</p>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>
+                            <p>Malaysia is a vibrant Southeast Asian country known for its rich cultural heritage, breathtaking landscapes, and modern urban marvels. With a harmonious blend of Malay, Chinese, Indian, and indigenous influences, Malaysia offers a unique and unforgettable experience for travelers.</p>
+                            <div class="d-flex justify-content-center mb-2">
+                                <a href="booking.html" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
+                                <a href="booking.html" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="btn btn-primary w-25" href="service.html">Read More</a>
+            </div>
+        </div>
+    </div>
+    <!-- Package End -->
+
+
+    <!-- Contact Us Start -->
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="booking p-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-md-6 text-white">
+                        <h6 class="text-white text-uppercase">Contact</h6>
+                        <h1 class="text-white mb-4">Create Your Own Tour With Us</h1>
+                        
+                        <a class="btn btn-outline-light py-3 px-5 mt-2" href="contact.php">Read More</a>
+                    </div>
+                    <div class="col-md-6 text-white">
+                        <h1 class="text-white mb-4">Description</h1>
+                        
+                            
+                                <p class="mb-4">We’re here to make your travel planning as seamless as possible! Whether you have questions, feedback, or need assistance, the TravelNest team is always ready to help.</p>
+                                <p class="mb-4">Customer Support: Need help with bookings, itineraries, or navigating our platform? Contact our friendly support team for quick assistance.</p>
+                                <p class="mb-4">Feedback and Suggestions: Have ideas to improve TravelNest? We love to hear your thoughts!</p>
+                                <p class="mb-4">Partnerships: Interested in collaborating with us? Reach out to discuss how we can work together.</p>
+                                
+                                
+                                <div class="col-md-6">
+                                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Contact Us end -->
+
+
+    <!-- Travel Knowlege Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center pb-4 wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Something to know</h6>
+                <h1 class="mb-5">Highlights Of the Places, We Will Take You</h1>
+            </div>
+            <div class="row gy-5 gx-4 justify-content-center">
+                <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="position-relative border border-primary pt-5 pb-4 px-4">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                            <i class="fa fa-car fa-3x text-white"></i>
+                        </div>
+                        <h5 class="mt-4">Temple Of tooth Relic</h5>
+                        <hr class="w-25 mx-auto bg-primary mb-1">
+                        <hr class="w-50 mx-auto bg-primary mt-0">
+                        <p class="mb-0">Located in the heart of Kandy, Sri Lanka, the Temple of the Sacred Tooth Relic is one of the most significant religious and cultural landmarks in the country.</p>
+                        <p class="mb-0">This sacred Buddhist temple houses a revered relic of Lord Buddha’s tooth, making it a vital pilgrimage site for Buddhists worldwide.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="position-relative border border-primary pt-5 pb-4 px-4">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                            <i class="fa fa-plane fa-3x text-white"></i>
+                        </div>
+                        <h5 class="mt-4">Anuradhapura</h5>
+                        <h5 class="mt-4">The Sacred City of Sri Lanka</h5>
+                        <hr class="w-25 mx-auto bg-primary mb-1">
+                        <hr class="w-50 mx-auto bg-primary mt-0">
+                        <p class="mb-0">Anuradhapura, located in the North Central Province of Sri Lanka, is one of the oldest and most sacred cities in the country</p>
+                        <p class="mb-0">Once the capital of ancient Sri Lanka, it is now a UNESCO World Heritage Site and a major pilgrimage destination, renowned for its spiritual, historical, and archaeological significance.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="position-relative border border-primary pt-5 pb-4 px-4">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                            <i class="fa fa-bus fa-3x text-white"></i>
+                        </div>
+                        <h5 class="mt-4">London Clock Tower</h5>
+                        <hr class="w-25 mx-auto bg-primary mb-1">
+                        <hr class="w-50 mx-auto bg-primary mt-0">
+                        <p class="mb-0">The London Clock Tower, more commonly known as the Elizabeth Tower, is an iconic symbol of the United Kingdom.</p>
+                        <p class="mb-0">Visitors can marvel at its historical significance and its striking presence against the London skyline.</p>
+                        <p class="mb-0">Located at the northern end of the Palace of Westminster, this stunning structure is famous worldwide for housing the famous Big Ben bell.</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Travel Knowlage end -->
+
+
+    <!-- Team Members Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Travel Guide</h6>
+                <h1 class="mb-5">Meet Our Guide</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/guide_001.jpg" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
+                            <a class="btn btn-square mx-1" href="https://www.facebook.com/login.php/"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square mx-1" href="https://x.com/i/flow/login?lang=en"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square mx-1" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">Mr. Saranga Bandara</h5>
+                            <small>Senior Guide</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/team-2.jpg" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
+                            <a class="btn btn-square mx-1" href="https://www.facebook.com/login.php/"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square mx-1" href="https://x.com/i/flow/login?lang=en"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square mx-1" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">Mrs. D. Gayani</h5>
+                            <small>Senior Guide/Secretary</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/team-1.jpg" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
+                            <a class="btn btn-square mx-1" href="https://www.facebook.com/login.php/"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square mx-1" href="https://x.com/i/flow/login?lang=en"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square mx-1" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">Mr. Oshada</h5>
+                            <small>Foreign Guide</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="team-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/team-4.jpg" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
+                            <a class="btn btn-square mx-1" href="https://www.facebook.com/login.php/"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square mx-1" href="https://x.com/i/flow/login?lang=en"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square mx-1" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">Mrs. Hashini</h5>
+                            <small>Junior Guide</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+    <!-- Daily Tours Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Tours</h6>
+                <h1 class="mb-5">Daily Travels and Tours</h1>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="package-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/srimahabodhi.jpg" alt="">
+                        </div>
+                        <div class="d-flex border-bottom">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Sri Maha Bodhiya</small>
+                            
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>5 Person</small>
+                        </div>
+                        <div class="text-center p-4">
+                            <h3 class="mb-0">$149.00</h3>
+                            
+                            <p>Sri Maha Bodhiya, located in Anuradhapura, Sri Lanka, is one of the most sacred sites for Buddhists worldwide.</p>
+                            <p>This revered tree stands in the heart of the Mahamewna Gardens and is surrounded by a tranquil atmosphere, making it a perfect spot for meditation and reflection. Pilgrims from all over the world visit to pay homage, drawn by its deep spiritual significance and historical importance.</p>
+                            <div class="d-flex justify-content-center mb-2">
+                                <a class="btn btn-primary py-3 px-5 mt-2" href="booking.html">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="package-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/ella2.jpg" alt="">
+                        </div>
+                        <div class="d-flex border-bottom">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Ella</small>
+                            
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>2 Person</small>
+                        </div>
+                        <div class="text-center p-4">
+                            <h3 class="mb-0">$139.00</h3>
+                            
+                            <p>Ella, located in the central highlands of Sri Lanka, is a picturesque town known for its breathtaking views, lush greenery, and natural beauty. Surrounded by tea plantations, Ella is a popular destination for nature lovers and adventure enthusiasts.</p>
+                            <p>Perfect for a peaceful getaway, Ella combines natural wonders with a cool climate, making it an ideal destination for relaxation and exploration.</p>
+                            <div class="d-flex justify-content-center mb-2">
+                                <a class="btn btn-primary py-3 px-5 mt-2" href="booking.html">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="package-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/nelligala.jpg" alt="">
+                        </div>
+                        <div class="d-flex border-bottom">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Nelligala National Temple</small>
+                            
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>2 Person</small>
+                        </div>
+                        <div class="text-center p-4">
+                            <h3 class="mb-0">$189.00</h3>
+                            
+                            <p>Nelligala National Temple, located in the central part of Sri Lanka near the town of Kandy, is a serene and sacred Buddhist temple perched atop a hill with sweeping views of the surrounding valleys and mountains.</p>
+                            <p>The Nelligala National Temple is also famous for its beautiful architecture, with intricately designed structures and statues that reflect Sri Lanka's rich Buddhist heritage.</p>
+                            <div class="d-flex justify-content-center mb-2">
+                                
+                                <a class="btn btn-primary py-3 px-5 mt-2" href="booking.html">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="btn btn-primary w-25" href="service.html">Read More</a>
+            </div>
+        </div>
+    </div>
+    <!-- Daily Tour End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="text-center">
+                <h6 class="section-title bg-white text-center text-primary px-3">Testimonial</h6>
+                <h1 class="mb-5">Our Clients Say!!!</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel position-relative">
+                <div class="testimonial-item bg-white text-center border p-4">
+                    <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="img/re1.jpeg" style="width: 150px; height: 150px;">
+                    <h5 class="mb-0">Tharusha Dilantha</h5>
+                    <p>Walasmulla</p>
+                    <p>Photograper</p>
+                    <p class="mb-0">ravelNest made planning my trip effortless! The custom itinerary tool saved me hours, and I discovered amazing hidden gems thanks to their destination guides. I can not imagine traveling without it!"</p>
+                    <div class="mb-3">
+                        <small class="fa fa-star text-primary"></small>
+                        <small class="fa fa-star text-primary"></small>
+                        <small class="fa fa-star text-primary"></small>
+                        <small class="fa fa-star text-primary"></small>
+                        <small class="fa fa-star text-primary"></small>
+                    </div>
+                </div>
+                <div class="testimonial-item bg-white text-center border p-4">
+                    <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="img/re2.jpeg" style="width: 150px; height: 150px;">
+                    <h5 class="mb-0">Kushan Lakshitha</h5>
+                    <p>Kurunagala</p>
+                    <p>Software Engineer</p>
+                    <p class="mb-0">"As a first-time traveler, I was nervous about planning everything. TravelNest provided everything I needed in one place, from budget calculators to packing lists. It felt like having a personal travel assistant!"</p>
+                    <div class="mb-3">
+                        <small class="fa fa-star text-primary"></small>
+                        <small class="fa fa-star text-primary"></small>
+                        <small class="fa fa-star text-primary"></small>
+                        <small class="fa fa-star text-primary"></small>
+                        <small class="fa fa-star text-primary"></small>
+                    </div>
+                </div>
+                <div class="testimonial-item bg-white text-center border p-4">
+                    <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="img/re3.jpeg" style="width: 150px; height: 150px;">
+                    <h5 class="mb-0">Dinuri Gayara</h5>
+                    <p>Galle</p>
+                    <p>Teacher</p>
+                    <p class="mb-0">"The travel budget calculator was spot-on! I planned a 10-day trip without overspending. Plus, I found great deals on accommodations and flights through TravelNest. Highly recommend!"</p>
+                    <div class="mb-3">
+                        <small class="fa fa-star text-primary"></small>
+                        <small class="fa fa-star text-primary"></small>
+                        <small class="fa fa-star text-primary"></small>
+                        <small class="fa fa-star text-primary"></small>
+                        <small class="fa fa-star text-primary"></small>
+                    </div>
+                </div>
+                <div class="testimonial-item bg-white text-center border p-4">
+                    <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="img/re4.jpeg" style="width: 150px; height: 150px;">
+                    <h5 class="mb-0">Alexina</h5>
+                    <p>USA</p>
+                    <p>Bank Manager</p>
+                    <p class="mb-0">"I joined the forums to ask about offbeat destinations, and the community was so welcoming and helpful. I got fantastic advice and even made a new friend who joined me on my trip!"</p>
+                    <div class="mb-3">
+                        <small class="fa fa-star text-primary"></small>
+                        <small class="fa fa-star text-primary"></small>
+                        <small class="fa fa-star text-primary"></small>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+        
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Company</h4>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Privacy Policy</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">FAQs & Help</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Tours</h4>
+                    <a class="btn btn-link" href="">One Day Tours</a>
+                    <a class="btn btn-link" href="">Daily Tours</a>
+                    <a class="btn btn-link" href="">Foreign Tours</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">FAQs & Help</a>
+                    
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Gallery</h4>
+                    <div class="row g-2 pt-2">
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/package-1.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/package-2.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/package-3.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/package-2.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/package-3.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/package-1.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Contact</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>No.81, Peradeniya, Kandy, Sri Lanka</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+94712546879</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>ashaninfo@example.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="index.html">TravelNest.com</a>, All Right Reserved.
+
+                        
+                        Designed By <a class="border-bottom" href="">Mr. Ashan Oshada</a>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="">Home</a>
+                            <a href="">Cookies</a>
+                            <a href="">Help</a>
+                            <a href="">FQAs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
