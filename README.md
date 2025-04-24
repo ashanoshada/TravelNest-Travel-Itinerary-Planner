@@ -41,7 +41,7 @@ A responsive travel booking platform built using HTML, CSS, JavaScript, and PHP.
 
 1. **💾 Downlaod Zip file in this Github Link**
     ```bash
-   git clone https://github.com/yourusername/travelnest.git
+   https://github.com/ashanoshada/TravelNest-Travel-Itinerary-Planner.git
 
 2. **🗝️ This Zip file Exact the this XAMPP Folder**
     ```bash
